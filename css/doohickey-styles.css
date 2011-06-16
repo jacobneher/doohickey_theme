@@ -1,0 +1,68 @@
+/* Override Seven's vertical-tabs.css settings */
+/* -- We want sub-fieldsets to look like fieldsets */
+div.vertical-tabs fieldset fieldset {
+  border: 1px solid #CCCCCC;
+  margin: 1em 0;
+  padding: 2.5em 0 0;
+}
+
+div.vertical-tabs .vertical-tabs-panes fieldset fieldset legend {
+  display: block;
+}
+
+div.vertical-tabs ul li.selected a:focus strong {
+  text-decoration: none;
+}
+
+
+/* Logout Link */
+#logout-link {
+  position: absolute;
+  right: 25px;
+  top: 5px;
+  font-size: 12px;
+}
+
+
+/* Pager */
+ul.pager li {
+  background-color: #EEE;
+  border: 1px solid #999 !important;
+}
+
+ul.pager li a {
+  padding: 0 5px;
+}
+
+ul.pager li.pager-current {
+  padding: 0 5px;
+  font-size: 1.2em;
+}
+
+
+/* Views Bulk Operations override */
+#views-bulk-operations-dropdown .form-item {
+  padding: 15px 10px 0 0;
+}
+
+.view-content-manager .views-field-view-node,
+.view-user-manager .views-field-edit-node {
+  width: 150px;
+}
+
+.view-content-manager .views-field-view-node a,
+.view-user-manager .views-field-edit-node a {
+  margin: 0 15px 0 0;
+}
+
+.view th.select-all {
+  width: 13px;
+}
+
+.view th.views-field-status {
+  width: 80px;
+}
+
+.view th.views-field-type {
+  width: 100px;
+}

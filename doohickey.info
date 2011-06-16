@@ -1,0 +1,10 @@
+name = Doohickey
+description = A simple administration theme based off of Seven.
+core = 7.x
+engine = phptemplate
+base theme = seven
+
+stylesheets[all][] = css/doohickey-styles.css
+
+regions[content] = Content
+regions[right_sidebar] = Right Sidebar
