@@ -6,14 +6,29 @@ div.vertical-tabs fieldset fieldset {
   padding: 2.5em 0 0;
 }
 
+/* -- Since we want to show sub-fieldsets, we probably should show the legend as well */
 div.vertical-tabs .vertical-tabs-panes fieldset fieldset legend {
   display: block;
 }
 
+/* -- Changing the color of the active vertical tab link text */
+div.vertical-tabs ul li.selected a {
+  color: #000;
+}
+
+/* -- Why have an underline when a vertical tab is clicked? I don't get it... */
 div.vertical-tabs ul li.selected a:focus strong {
   text-decoration: none;
 }
 
+/* Provide some visual assistance when hovering over tables */
+table tr:hover td {
+  background-color: #DDD;
+}
+
+table#permissions td.module {
+  background-color: inherit;
+}
 
 /* Logout Link */
 #logout-link {
@@ -65,4 +80,18 @@ ul.pager li.pager-current {
 
 .view th.views-field-type {
   width: 100px;
+}
+
+/* The "sticky" quickbar menu covers sticky headers on tables, let's correct that */
+body.quickbar-sticky table.sticky-header {
+  top: 30px !important;
+}
+
+/* Styling for modules page with module_filter.module enabled */
+#module-filter-squeeze {
+  padding: 0 25px;
+}
+
+#module-filter-squeeze table td.checkbox {
+  border-left: 1px solid #BEBFB9;
 }
