@@ -1,3 +1,10 @@
+/* General */
+#content {
+  /* We do this so that pages with secondary tabs display correctly. Without
+  this the content of the page overlays the secondary tabs. */
+  clear: both;
+}
+
 /* Override Seven's vertical-tabs.css settings */
 /* -- We want sub-fieldsets to look like fieldsets */
 div.vertical-tabs fieldset fieldset {
