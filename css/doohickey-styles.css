@@ -37,14 +37,6 @@ table#permissions td.module {
   background-color: inherit;
 }
 
-/* Logout Link */
-#logout-link {
-  position: absolute;
-  right: 25px;
-  top: 5px;
-  font-size: 12px;
-}
-
 
 /* Pager */
 ul.pager li {

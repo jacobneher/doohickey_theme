@@ -1,11 +1,4 @@
 <div id="branding" class="clearfix">
-  <?php
-    global $user;
-    if (in_array('Site Administrator', $user->roles)):
-  ?>
-  <div id="logout-link"><a href="<?php global $base_url; print $base_url; ?>/user/logout">Logout</a></div>
-  <?php print $breadcrumb; ?>
-  <?php endif; ?>
   <?php print render($title_prefix); ?>
   <?php if ($title): ?>
     <h1 class="page-title"><?php print $title; ?></h1>
